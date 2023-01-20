@@ -21,8 +21,9 @@
     }
 
     & .category-body-container {
-      // opacity: 1;
-      filter: brightness(0.9);
+      h2 {
+        mix-blend-mode: difference;
+      }
     }
   }
 
@@ -59,12 +60,13 @@
     position: absolute;
 
     h2 {
-      font-weight: bold;
+      font-family: "Raleway";
+      // font-weight: bold;
       text-transform: uppercase;
       margin: 0 0.5rem 0;
       font-size: 2.5rem;
       color: white;
-      line-height: 80%;
+      line-height: 70%;
       text-shadow: 2px 0px 0px rgba(0, 0, 0, 1);
 
       @media screen and (max-width: 680px) {
