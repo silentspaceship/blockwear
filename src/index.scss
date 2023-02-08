@@ -1,19 +1,35 @@
+@font-face {
+  src: url("./assets/fonts/Moderat-Regular.woff2");
+  font-family: "Moderat";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url("./assets/fonts/Moderat-Bold.woff2");
+  font-family: "Moderat";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url("./assets/fonts/Moderat-Thin.woff2");
+  font-family: "Moderat";
+  font-weight: 100;
+}
+
+@font-face {
+  src: url("./assets/fonts/Moderat-Extended-Black.woff2");
+  font-family: "Moderat Extended";
+  font-weight: 900;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Moderat", sans-serif;
+  background-color: #f5f5f5;
 }
 
 a {

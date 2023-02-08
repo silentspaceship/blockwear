@@ -2,7 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/BlockwearLogo.svg";
 
-import "./navigation.styles.scss";
+import "./Navigation.styles.scss";
 
 function Navigation() {
   return (

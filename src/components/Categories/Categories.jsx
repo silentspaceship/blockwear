@@ -1,4 +1,4 @@
-import "./categories.styles.scss";
+import "./Categories.styles.scss";
 
 import CategoryItem from "../CategoryItem/CategoryItem";
 

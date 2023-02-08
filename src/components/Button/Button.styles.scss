@@ -1,0 +1,47 @@
+.button-container {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 1px;
+  // padding: 0 35px 0 35px;
+  font-size: 1rem;
+  background-color: black;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  font-family: "Moderat Extended";
+  // font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+
+  &:hover {
+    background-color: #f5f5f5;
+    color: black;
+  }
+
+  &.google-sign-in {
+    border: 2px solid #4285f4;
+
+    background-color: #4285f4;
+    color: #f5f5f5;
+
+    &:hover {
+      background-color: #f5f5f5;
+      color: #4285f4;
+    }
+  }
+
+  &.inverted {
+    background-color: #f5f5f5;
+    color: black;
+    border: 2px solid black;
+
+    &:hover {
+      background-color: black;
+      color: #f5f5f5;
+    }
+  }
+}

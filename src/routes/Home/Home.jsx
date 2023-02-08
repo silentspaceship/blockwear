@@ -18,7 +18,7 @@ function Home() {
       id: 3,
       title: "sneakers",
       imageUrl:
-        "https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.unsplash.com/photo-1585232004423-244e0e6904e3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
     },
     {
       id: 4,
