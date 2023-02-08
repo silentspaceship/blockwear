@@ -1,4 +1,4 @@
-import "./SignUpForm.scss";
+import "./SignUpForm.styles.scss";
 
 import { useState } from "react";
 import {
@@ -59,7 +59,7 @@ export default function SignUpForm() {
   return (
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>
-      <span>Sign up with your e-mail and a password</span>
+      <span>Create an account with an e-mail and a password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="Name"

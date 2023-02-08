@@ -1,21 +1,28 @@
 .button-container {
-  min-width: 165px;
-  width: auto;
-  height: 50px;
+  min-width: 9rem;
+  width: 100%;
+  min-height: 50px;
+  // height: 50px;
   letter-spacing: 1px;
-  // padding: 0 35px 0 35px;
-  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
   background-color: black;
   color: #f5f5f5;
   text-transform: uppercase;
   font-family: "Moderat Extended";
   // font-weight: bold;
-  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 2px solid black;
+
+  @media screen and (max-width: 400px) {
+    // font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    min-width: 0;
+    width: 45%;
+  }
 
   &:hover {
     background-color: #f5f5f5;
