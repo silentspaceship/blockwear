@@ -1,6 +1,7 @@
 import "./SignInForm.styles.scss";
 
 import { useState } from "react";
+
 import Button from "../Button/Button";
 import FormInput from "../FormInput/FormInput";
 
@@ -34,11 +35,7 @@ export default function SignInForm() {
     event.preventDefault();
 
     try {
-      const response = await signInAuthUserWithEmailAndPassword(
-        email,
-        password
-      );
-      console.log(response);
+      const user = await signInAuthUserWithEmailAndPassword(email, password);
 
       resetFormFields();
     } catch (error) {
@@ -63,8 +60,7 @@ export default function SignInForm() {
   }
 
   const signInWithGoogle = async () => {
-    const { user } = await signInWithGooglePopup();
-    await createUserDocumentFromAuth(user);
+    await signInWithGooglePopup();
   };
 
   return (
