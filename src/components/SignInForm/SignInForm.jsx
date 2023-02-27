@@ -31,11 +31,15 @@ export default function SignInForm() {
     setFormFields({ ...formFields, [name]: value });
   }
 
+  const signInWithGoogle = async () => {
+    await signInWithGooglePopup();
+  };
+
   async function handleSubmit(event) {
     event.preventDefault();
 
     try {
-      const user = await signInAuthUserWithEmailAndPassword(email, password);
+      await signInAuthUserWithEmailAndPassword(email, password);
 
       resetFormFields();
     } catch (error) {
@@ -58,10 +62,6 @@ export default function SignInForm() {
       }
     }
   }
-
-  const signInWithGoogle = async () => {
-    await signInWithGooglePopup();
-  };
 
   return (
     <div className="sign-in-container">
