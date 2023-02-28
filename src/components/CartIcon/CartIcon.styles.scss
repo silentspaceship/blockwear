@@ -10,6 +10,10 @@
   .shopping-icon {
     width: 24px;
     height: 24px;
+
+    &.active {
+      filter: invert(1);
+    }
   }
 
   .item-count {
@@ -18,6 +22,10 @@
     font-weight: bold;
     bottom: 12px;
     user-select: none;
+
+    &.active {
+      filter: invert(1);
+    }
   }
 
   &::after {
@@ -39,5 +47,16 @@
   &:hover > .shopping-icon,
   &:hover > .item-count {
     filter: invert(1);
+  }
+
+  &.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
   }
 }

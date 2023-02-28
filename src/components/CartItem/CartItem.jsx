@@ -8,7 +8,7 @@ function CartItem({ cartItem }) {
       <div className="item-details">
         <span className="name">{name}</span>
         <span className="quantity">×{quantity}</span>
-        <span className="price">${price}</span>
+        <span className="price">${`${price * quantity}`}</span>
       </div>
     </div>
   );
