@@ -1,16 +1,23 @@
 import "./Navigation.styles.scss";
 
 import { useContext } from "react";
+
 import { Outlet, Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/BlockwearLogo.svg";
 
+import CartIcon from "../../components/CartIcon/CartIcon";
+
+import CartDropdown from "../../components/CartDropdown/CartDropdown";
+
 import { UserContext } from "../../contexts/userContext";
 
 import { signOutUser } from "../../utils/firebase/firebase-utils";
+import { CartContext } from "../../contexts/cartContext";
 
 function Navigation() {
   const { currentUser } = useContext(UserContext);
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <>
@@ -33,7 +40,11 @@ function Navigation() {
               Sign In
             </Link>
           )}
+
+          <CartIcon />
         </div>
+
+        {isCartOpen && <CartDropdown />}
       </nav>
 
       <Outlet />

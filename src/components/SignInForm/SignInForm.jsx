@@ -66,7 +66,9 @@ export default function SignInForm() {
   return (
     <div className="sign-in-container">
       <h2>Already have an account?</h2>
-      <span>Sign In with your credentials or a Google account</span>
+      <span className="sign-in-span">
+        Sign In with your credentials or a Google account
+      </span>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="E-mail"
