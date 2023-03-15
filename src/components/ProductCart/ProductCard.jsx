@@ -1,4 +1,4 @@
-import "./ProductCart.styles.scss";
+import "./ProductCard.styles.scss";
 
 import { useContext } from "react";
 

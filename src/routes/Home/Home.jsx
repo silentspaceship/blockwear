@@ -1,4 +1,4 @@
-import Categories from "../../components/Categories/Categories";
+import Directory from "../../components/Directory/Directory";
 
 function Home() {
   const categories = [
@@ -22,18 +22,18 @@ function Home() {
     },
     {
       id: 4,
-      title: "women",
+      title: "womens",
       imageUrl: "https://i.ibb.co/GCCdy8t/womens.png",
     },
     {
       id: 5,
-      title: "men",
+      title: "mens",
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
   ];
   return (
     <>
-      <Categories categories={categories} />
+      <Directory categories={categories} />
     </>
   );
 }

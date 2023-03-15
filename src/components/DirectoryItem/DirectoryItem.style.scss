@@ -1,4 +1,4 @@
-.category-container {
+.directory-item-container {
   position: relative;
   min-width: 30%;
   height: 240px;
@@ -17,7 +17,7 @@
       transition: transform 0.1s ease;
     }
 
-    & .category-body-container {
+    & .body {
       width: 100%;
     }
   }
@@ -33,7 +33,7 @@
     background-position: center;
   }
 
-  .category-body-container {
+  .body {
     width: auto;
     display: flex;
     flex-direction: row;

@@ -9,19 +9,19 @@
   @media screen and (max-width: 400px) {
     width: 100%;
   }
-}
 
-h2 {
-  margin: 10px 0;
-}
+  h2 {
+    margin: 10px 0;
+  }
 
-.sign-in-span {
-  font-size: 0.9rem;
-  font-weight: 100;
-}
+  .sign-in-span {
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
 
-.buttons-container {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
+  .buttons-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+  }
 }
