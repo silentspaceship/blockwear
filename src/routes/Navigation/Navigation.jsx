@@ -1,4 +1,9 @@
-import "./Navigation.styles.scss";
+import {
+  NavigationContainer,
+  LogoContainer,
+  NavLinks,
+  NavLink,
+} from "./Navigation.styles";
 
 import { useContext } from "react";
 
@@ -21,31 +26,27 @@ function Navigation() {
 
   return (
     <>
-      <nav className="navigation">
-        <Link className="logo-container" to="/">
+      <NavigationContainer>
+        <LogoContainer to="/">
           <Logo className="logo" />
-        </Link>
+        </LogoContainer>
 
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/shop">
-            Shop
-          </Link>
+        <NavLinks>
+          <NavLink to="/shop">Shop</NavLink>
 
           {currentUser ? (
-            <span className="nav-link" onClick={signOutUser}>
+            <NavLink as="span" onClick={signOutUser}>
               Sign Out
-            </span>
+            </NavLink>
           ) : (
-            <Link className="nav-link" to="/auth">
-              Sign In
-            </Link>
+            <NavLink to="/auth">Sign In</NavLink>
           )}
 
           <CartIcon />
-        </div>
+        </NavLinks>
 
         {isCartOpen && <CartDropdown />}
-      </nav>
+      </NavigationContainer>
 
       <Outlet />
     </>
