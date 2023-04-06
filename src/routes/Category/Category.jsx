@@ -1,4 +1,4 @@
-import "./Category.styles.scss";
+import { CategoryContainer, CategoryItems, Title } from "./Category.styles";
 
 import { useContext, useEffect, useState } from "react";
 
@@ -18,15 +18,15 @@ function Category() {
   }, [category, categoriesMap]);
 
   return (
-    <div className="category-container">
-      <h2 className="title">{category}</h2>
-      <div className="category-items-container">
+    <CategoryContainer>
+      <Title>{category}</Title>
+      <CategoryItems>
         {products &&
           products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
-      </div>
-    </div>
+      </CategoryItems>
+    </CategoryContainer>
   );
 }
 

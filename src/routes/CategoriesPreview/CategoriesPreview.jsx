@@ -1,5 +1,3 @@
-import "./CategoriesPreview.styles.scss";
-
 import { useContext } from "react";
 
 import { CategoriesContext } from "../../contexts/categoriesContext";
