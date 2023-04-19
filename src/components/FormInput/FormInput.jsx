@@ -1,16 +1,12 @@
-import "./FormInput.style.scss";
+import { FormInputLabel, Group, Input } from "./FormInput.style.jsx";
 
 export default function FormInput({ label, ...props }) {
   return (
-    <div className="group">
-      <input className="form-input" {...props} />
+    <Group>
+      <Input {...props} />
       {label && (
-        <label
-          className={`${props.value.length ? "shrink" : ""} form-input-label`}
-        >
-          {label}
-        </label>
+        <FormInputLabel shrink={props.value.length}>{label}</FormInputLabel>
       )}
-    </div>
+    </Group>
   );
 }
