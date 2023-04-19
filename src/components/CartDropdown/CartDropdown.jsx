@@ -33,9 +33,7 @@ function CartDropdown() {
         )}
       </CartItems>
 
-      <ButtonCheckoutContainer>
-        <Button onClick={goToCheckoutHandler}>Proceed to Checkout</Button>
-      </ButtonCheckoutContainer>
+      <Button onClick={goToCheckoutHandler}>Proceed to Checkout</Button>
     </CartDropdownContainer>
   );
 }

@@ -2,35 +2,6 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 
-export const DirectoryItemContainer = styled(Link)`
-  position: relative;
-  min-width: 30%;
-  height: 240px;
-  flex: 1 1 auto;
-  display: flex;
-  align-items: flex-end;
-  justify-content: left;
-  border: 2px solid #16161d;
-  overflow: hidden;
-
-  &:hover {
-    cursor: pointer;
-
-    & .background-image {
-      transform: scale(1.05);
-      transition: transform 0.1s ease;
-    }
-
-    & .body {
-      width: 100%;
-    }
-  }
-
-  &.large {
-    height: 380px;
-  }
-`;
-
 export const BackgroundImage = styled.div`
   width: 100%;
   height: 100%;
@@ -59,5 +30,34 @@ export const Body = styled.div`
       font-size: 4vw;
       margin: 0 0.25rem 0;
     }
+  }
+`;
+
+export const DirectoryItemContainer = styled(Link)`
+  position: relative;
+  min-width: 30%;
+  height: 240px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  border: 2px solid #16161d;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+
+    & ${BackgroundImage} {
+      transform: scale(1.05);
+      transition: transform 0.1s ease;
+    }
+
+    & ${Body} {
+      width: 100%;
+    }
+  }
+
+  &.large {
+    height: 380px;
   }
 `;

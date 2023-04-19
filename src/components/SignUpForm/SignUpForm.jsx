@@ -1,4 +1,4 @@
-import "./SignUpForm.styles.scss";
+import { SignUpContainer, SignUpMessage } from "./SignUpForm.styles.jsx";
 
 import { useState } from "react";
 
@@ -58,11 +58,11 @@ export default function SignUpForm() {
   }
 
   return (
-    <div className="sign-up-container">
+    <SignUpContainer>
       <h2>Don't have an account?</h2>
-      <span className="sign-up-span">
+      <SignUpMessage>
         Create an account with an e-mail and a password
-      </span>
+      </SignUpMessage>
       <form onSubmit={handleSubmit}>
         <FormInput
           label="Name"
@@ -101,10 +101,8 @@ export default function SignUpForm() {
           value={confirmPassword}
         />
 
-        <Button buttonType="" type="submit">
-          Sign up
-        </Button>
+        <Button type="submit">Sign up</Button>
       </form>
-    </div>
+    </SignUpContainer>
   );
 }

@@ -5,7 +5,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { CategoriesContext } from "../../contexts/categoriesContext";
-import ProductCard from "../../components/ProductCart/ProductCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 
 function Category() {
   const { category } = useParams();

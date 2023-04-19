@@ -1,4 +1,6 @@
-.sign-up-container {
+import styled from "styled-components";
+
+export const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 380px;
@@ -12,9 +14,9 @@
   h2 {
     margin: 10px 0;
   }
+`;
 
-  .sign-up-span {
-    font-size: 0.9rem;
-    font-weight: 100;
-  }
-}
+export const SignUpMessage = styled.span`
+  font-size: 0.9rem;
+  font-weight: 100;
+`;

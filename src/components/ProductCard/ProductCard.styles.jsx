@@ -8,6 +8,19 @@ export const ProductCardContainer = styled.div`
   align-items: center;
   position: relative;
 
+  button {
+    width: 80%;
+    max-width: 300px;
+    position: absolute;
+    bottom: 5rem;
+    display: none;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      bottom: 20%;
+    }
+  }
+
   &:hover {
     img {
       transform: scale(1.05);

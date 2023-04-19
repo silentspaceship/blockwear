@@ -12,6 +12,11 @@ export const CartDropdownContainer = styled.div`
   top: 50px;
   right: 40px;
   z-index: 5;
+
+  button {
+    margin-top: auto;
+    width: 100%;
+  }
 `;
 
 export const CartItems = styled.div`
@@ -26,9 +31,4 @@ export const EmptyCartMessage = styled.span`
   font-size: 1rem;
   margin: auto;
   color: #16161d;
-`;
-
-export const ButtonCheckoutContainer = styled.div`
-  margin-top: auto;
-  width: 100%;
 `;
