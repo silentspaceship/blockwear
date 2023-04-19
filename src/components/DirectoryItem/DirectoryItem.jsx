@@ -5,9 +5,9 @@ import {
 } from "./DirectoryItem.styles";
 
 function DirectoryItem({ category }) {
-  const { imageUrl, title } = category;
+  const { imageUrl, title, route } = category;
   return (
-    <DirectoryItemContainer to={`/shop/${title}`}>
+    <DirectoryItemContainer to={route}>
       <BackgroundImage style={{ backgroundImage: `url(${imageUrl})` }} />
       <Body>
         <h2>{title}</h2>
