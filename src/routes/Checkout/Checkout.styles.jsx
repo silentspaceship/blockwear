@@ -8,6 +8,11 @@ export const CheckoutContainer = styled.div`
   align-items: center;
   margin: 50px auto 0;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 750px) {
+    width: 90%;
+    margin-top: 0;
+  }
 `;
 
 export const CheckoutHeader = styled.div`
@@ -20,8 +25,8 @@ export const CheckoutHeader = styled.div`
   justify-content: space-between;
   border-bottom: 2px solid black;
 
-  @media screen and (max-width: 800px) {
-    font-size: 2vw;
+  @media screen and (max-width: 750px) {
+    font-size: 3vw;
   }
 `;
 

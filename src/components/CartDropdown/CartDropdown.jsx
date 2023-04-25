@@ -2,7 +2,6 @@ import {
   CartDropdownContainer,
   CartItems,
   EmptyCartMessage,
-  ButtonCheckoutContainer,
 } from "./CartDropdown.styles";
 
 import { useContext } from "react";
@@ -33,7 +32,9 @@ function CartDropdown() {
         )}
       </CartItems>
 
-      <Button onClick={goToCheckoutHandler}>Proceed to Checkout</Button>
+      {cartCount !== 0 && (
+        <Button onClick={goToCheckoutHandler}>Proceed to Checkout</Button>
+      )}
     </CartDropdownContainer>
   );
 }
