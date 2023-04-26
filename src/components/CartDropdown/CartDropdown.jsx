@@ -14,12 +14,14 @@ import Button from "../Button/Button";
 import CartItem from "../CartItem/CartItem";
 
 function CartDropdown() {
-  const { cartItems, cartCount } = useContext(CartContext);
+  const { cartItems, cartCount, setIsCartOpen, isCartOpen } =
+    useContext(CartContext);
 
   const navigate = useNavigate();
 
   function goToCheckoutHandler() {
     navigate("/checkout");
+    setIsCartOpen(!isCartOpen);
   }
 
   return (
